@@ -2,7 +2,6 @@
 
 ## FMLtalk Device
 - `python3 ModelManger.py` # FMLtalk GUI
-- 
 - `python3 handler.py` # Global meta model handler
 
 ## CAV Device
@@ -14,6 +13,5 @@
 - `python FML/TAV Device1/test.py` #launch the FML architecture(fine-tune handler)
 
 
-## Note
 
 
