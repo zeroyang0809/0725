@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Leaderboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>*{margin-left: 10px; margin-right: 10px;}</style>
+    </head>
+    <body>
+        <h1>Leaderboard</h1>
+        <br>
+        <form action = "http://localhost:5000/leaderboard" method = "POST" 
+            enctype = "multipart/form-data">
+            Detection device:
+            <select name = "mdevice" onchange = "this.form.submit()">
+                <option value = "" selected disabled hidden>Device Name</option>
+                <option value = "SpeedMonitor">Speed Monitor</option>
+                <option value = "ValidityCheck">Validity Check</option>
+            </select><br>
+            <br>
+        </form>
+        <br>
+        <a href="/">Index</a><br>
+    </body>
+</html>

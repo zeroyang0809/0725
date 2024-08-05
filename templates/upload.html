@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Model Upload Module</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>*{margin-left: 10px; margin-right: 10px;}</style>
+    </head>
+    <body>
+        <h1>Upload Model Module</h1>
+        <br>
+        <form action = "http://localhost:5000/uploader" method = "POST" 
+            enctype = "multipart/form-data">
+            Model Name: <input type = "value" name = "mname"><br>
+            <br>
+            Uploader: <input type = "value" name = "muploader"><br>
+            <br>
+            Detection device:
+            <select name = "mdevice">
+                <option value = "SpeedMonitor">Speed Monitor</option>
+                <option value = "ValidityCheck">Validity Check</option>
+            </select><br>
+            <br>
+            File: <input type = "file" name = "file" /><br>
+            <br>
+            <input type = "submit"/>&nbsp;&nbsp;<input type = "reset">
+        </form>
+    </body>
+</html>
